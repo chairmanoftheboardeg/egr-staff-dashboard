@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EGR Staff | Dashboard</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/logo.png" />
+  <link rel="apple-touch-icon" href="../assets/logo.png" />
+
+  <link rel="stylesheet" href="../assets/app.css" />
+</head>
+<body>
+  <div class="wrap">
+    <aside class="sidebar">
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+        <img
+          src="../assets/logo.png"
+          alt="EGR"
+          width="34"
+          height="34"
+          style="border-radius:10px; border:1px solid rgba(255,255,255,.10); background:rgba(255,255,255,.03);"
+        />
+        <div>
+          <div class="brand" style="margin:0;">EGR Staff</div>
+          <div class="small" style="margin-top:-2px;">Operations Dashboard</div>
+        </div>
+      </div>
+
+      <div id="who" class="small" style="margin-bottom:12px;"></div>
+
+      <nav id="nav" class="nav"></nav>
+
+      <div style="margin-top:14px; padding-top:14px; border-top:1px solid rgba(255,255,255,.08);">
+        <button id="logout" class="btn" style="width:100%;">Sign out</button>
+      </div>
+
+      <div class="small" style="margin-top:10px; opacity:.75;">
+        Version: v1.0 • Internal use only
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <div id="title" style="font-weight:800;">Loading…</div>
+          <div id="subtitle" class="small"></div>
+        </div>
+        <div id="badges" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+      </div>
+
+      <div id="view" class="card">Initialising…</div>
+    </main>
+  </div>
+
+  <script type="module" src="../js/app.js"></script>
+</body>
+</html>
